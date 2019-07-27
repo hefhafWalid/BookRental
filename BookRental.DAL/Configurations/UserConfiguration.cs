@@ -2,7 +2,7 @@
 
 namespace BookRental.DAL.Configurations
 {
-    class UserConfiguration : EntityBaseConfiguration<User>
+    public class UserConfiguration : EntityBaseConfiguration<User>
     {
         public UserConfiguration()
         {

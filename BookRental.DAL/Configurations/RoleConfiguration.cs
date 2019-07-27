@@ -2,7 +2,7 @@
 
 namespace BookRental.DAL.Configurations
 {
-    class RoleConfiguration : EntityBaseConfiguration<Role>
+    public class RoleConfiguration : EntityBaseConfiguration<Role>
     {
         public RoleConfiguration()
         {
