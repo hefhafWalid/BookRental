@@ -16,7 +16,7 @@ namespace BookRental.DAL.Configurations
             Property(m => m.Rating).IsRequired();
             Property(m => m.Description).IsRequired().HasMaxLength(2000);
             Property(m => m.TrailerURI).HasMaxLength(200);
-            HasMany(m => m.Stocks).WithRequired().HasForeignKey(s => s.MovieId);
+            HasMany(m => m.Stocks).WithRequired().HasForeignKey(s => s.BookId);
         }
     }
 }
