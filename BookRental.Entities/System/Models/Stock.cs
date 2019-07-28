@@ -7,7 +7,7 @@ namespace BookRental.Entities
     {
         public int ID { get; set; }
 
-        public int MovieId { get; set; }
+        public int BookId { get; set; }
 
         public virtual Book Book { get; set; }
 
