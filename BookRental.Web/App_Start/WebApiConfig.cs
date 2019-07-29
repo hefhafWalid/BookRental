@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using BookRental.Web.Infrastructure.MessageHandlers;
 using System.Web.Http;
 
 namespace BookRental.Web
@@ -10,6 +8,7 @@ namespace BookRental.Web
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.MessageHandlers.Add(new BookRentalAuthHandler());
 
             // Web API routes
             config.MapHttpAttributeRoutes();
