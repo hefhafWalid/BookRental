@@ -1,0 +1,32 @@
+﻿<hr />
+<div class="row" ng-repeat="book in rentals" ng-if="!loadingStatistics">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <span>{{book.Title}}</span>
+        </div>
+        <div class="panel-body">
+            <div class="col-xs-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <strong class="ng-binding">{{book.Title}} </strong>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <img class="media-object center-block img-responsive center-block"
+                                 ng-src="../../Content/images/books/{{book.Image}}" alt="{{book.Title}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-9">
+                <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                        <div id="statistics-{{book.ID}}">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- end row -->

@@ -25,7 +25,7 @@ body {
     background-color: whitesmoke;
 }
 
-.movie {
+.book {
 }
 
 .panel-body h4 {
@@ -92,13 +92,13 @@ ul.pagination > li
 }
 
 @media (max-width: 650px) {
-    .movieDescription {
+    .bookDescription {
         margin-left: 240px !important;
     }
 }
 
 @media (max-width: 490px) {
-    .movieDescription {
+    .bookDescription {
         margin-left: 125px !important;
     }
 }
@@ -120,7 +120,7 @@ ul.pagination > li
 }
 
 /*Edit form*/
-#editMovieWrapper {
+#editbookWrapper {
     background-color: #337AB7;
     color: white;
     padding: 20px;
@@ -183,7 +183,7 @@ ul.pagination > li
     color: #FFB658 !important;
 }
 
-.movieDescription {
+.bookDescription {
     margin-left: 335px;
 }
 
