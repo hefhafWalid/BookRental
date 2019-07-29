@@ -1,4 +1,4 @@
-﻿using BookRental.DAL.Infrastructure;
+﻿using BookRental.DataAccess.Infrastructure;
 using BookRental.Entities;
 using System;
 using System.Data.Entity;
@@ -6,7 +6,7 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace BookRental.DAL.Repositories
+namespace BookRental.DataAccess.Repositories
 {
     public class EntityBaseRepository<T> : IEntityBaseRepository<T>
             where T : class, IEntityBase, new()

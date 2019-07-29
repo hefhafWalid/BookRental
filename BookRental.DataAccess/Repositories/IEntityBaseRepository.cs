@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace BookRental.DAL.Repositories
+namespace BookRental.DataAccess.Repositories
 {
     public interface IEntityBaseRepository<T> where T : class, IEntityBase, new()
     {

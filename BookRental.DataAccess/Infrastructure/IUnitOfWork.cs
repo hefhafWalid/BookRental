@@ -1,5 +1,5 @@
 ﻿
-namespace BookRental.DAL.Infrastructure
+namespace BookRental.DataAccess.Infrastructure
 {
     public interface IUnitOfWork
     {
