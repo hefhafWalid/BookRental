@@ -1,6 +1,6 @@
 ﻿using BookRental.Entities;
 
-namespace BookRental.DAL.Configurations
+namespace BookRental.DataAccess.Configurations
 {
     public class CustomerConfiguration : EntityBaseConfiguration<Customer>
     {

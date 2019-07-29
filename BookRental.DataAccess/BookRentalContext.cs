@@ -1,9 +1,9 @@
-﻿using BookRental.DAL.Configurations;
+﻿using BookRental.DataAccess.Configurations;
 using BookRental.Entities;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace BookRental.DAL
+namespace BookRental.DataAccess
 {
     public class BookRentalContext : DbContext
     {

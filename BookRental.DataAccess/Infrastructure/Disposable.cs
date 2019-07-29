@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BookRental.DAL.Infrastructure
+namespace BookRental.DataAccess.Infrastructure
 {
     public class Disposable : IDisposable
     {

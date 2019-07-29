@@ -1,7 +1,7 @@
 ﻿using BookRental.Entities;
 using System.Data.Entity.ModelConfiguration;
 
-namespace BookRental.DAL.Configurations
+namespace BookRental.DataAccess.Configurations
 {
     public class EntityBaseConfiguration<T> : EntityTypeConfiguration<T> where T : class, IEntityBase
     {
