@@ -1,4 +1,4 @@
-﻿using BookRental.Entities;
+﻿using BookRental.DataModels;
 using System.Data.Entity.ModelConfiguration;
 
 namespace BookRental.DataAccess.Configurations
