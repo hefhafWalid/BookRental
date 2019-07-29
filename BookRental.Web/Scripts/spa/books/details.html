@@ -1,0 +1,97 @@
+﻿<hr />
+<div class="jumbotron">
+    <div class="container text-center">
+        <img alt="{{book.Title}}" ng-src="../../../Content/images/books/{{book.Image}}" class="pull-left" height="120" />
+        <div class="bookDescription"><i><i class="fa fa-quote-left"></i>{{book.Description}}<i class="fa fa-quote-right"></i></i></div>
+        <br />
+        <div class="btn-group">
+            <button ng-if="book.IsAvailable" type="button" ng-click="openRentDialog();" class="btn btn-sm btn-primary">Rent book<i class="fa fa-book pull-right"></i></button>
+            <a href="#/books/edit/{{book.ID}}" class="btn btn-sm btn-default">Edit book<i class="fa fa-pencil-square-o pull-right"></i></a>
+        </div> <!-- end btn-group -->
+    </div> <!-- end container -->
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h5>{{book.Title}}</h5>
+            </div>
+            <div class="panel-body" ng-if="!loadingbook">
+                <div class="media">
+                    <a class="pull-right" ng-href="#/books/{{book.ID}}" title="View {{book.Title}} details">
+                        <img class="media-object" height="120" ng-src="../../Content/images/books/{{book.Image}}" alt="" />
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{book.Title}}</h4>
+                        Directed by: <label>{{book.Director}}</label><br />
+                        Written by: <label>{{book.Writer}}</label><br />
+                        Produced by: <label>{{book.Producer}}</label><br />
+                        Rating: <span component-rating='{{book.Rating}}'></span>
+                        <br />
+                        <label class="label label-info">{{book.Genre}}</label>
+                        <available-book is-available="{{book.IsAvailable}}"></available-book>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer clearfix" ng-if="!loadingbook">
+                <div class="pull-right">
+                    <a ng-href="{{book.TrailerURI}}" class="btn btn-primary fancybox-media">View Trailer <i class="fa fa-video-camera pull-right"></i></a>
+                    <a ng-href="#/books/edit/{{book.ID}}" class="btn btn-default">Edit book <i class="fa fa-pencil-square pull-right"></i></a>
+                </div>
+            </div>
+            <div ng-if="loadingbook">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+                    <i class="fa fa-refresh fa-4x fa-spin"></i> <label class="label label-primary">Loading book data...</label>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-danger shortPanel">
+            <div class="panel-heading clearfix">
+                <h5 class="pull-left">Rentals</h5>
+                <div class="input-group">
+                    <input id="inputSearchbooks" type="search" ng-model="filterRentals" class="form-control" placeholder="Filter..">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" ng-click="clearSearch();"><i class="glyphicon glyphicon-remove-sign"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive" ng-if="!loadingRentals">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Rental date</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="rental in rentalHistory | filter:filterRentals">
+                            <td>{{rental.ID}}</td>
+                            <td>{{rental.Customer}}</td>
+                            <td>{{rental.RentalDate | date:'fullDate'}}</td>
+                            <td ng-class="getStatusColor(rental.Status)">{{rental.Status}}</td>
+                            <td class="text-center">
+                                <button ng-if="isBorrowed(rental)" type="button" class="btn btn-primary btn-xs" ng-click="returnbook(rental.ID)">Return</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div ng-if="loadingRentals">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+                    <i class="fa fa-refresh fa-4x fa-spin"></i> <label class="label label-primary">Loading rental history...</label>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+    </div>
+</div>
