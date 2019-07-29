@@ -1,5 +1,5 @@
 ﻿
-namespace BookRental.Entities
+namespace BookRental.DataModels
 {
     public class Role : IEntityBase
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BookRental.Entities
+namespace BookRental.DataModels
 {
     public class Book : IEntityBase
     {

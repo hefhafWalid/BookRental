@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BookRental.Entities
+namespace BookRental.DataModels
 {
     public class Error : IEntityBase
     {
