@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BookRental.Entities
+namespace BookRental.DataModels
 {
     public class Genre : IEntityBase
     {
