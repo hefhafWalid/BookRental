@@ -1,5 +1,5 @@
 ﻿using BookRental.DataAccess.Infrastructure;
-using BookRental.Entities;
+using BookRental.DataModels;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;

@@ -1,5 +1,5 @@
 ﻿using BookRental.DataAccess.Configurations;
-using BookRental.Entities;
+using BookRental.DataModels;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 

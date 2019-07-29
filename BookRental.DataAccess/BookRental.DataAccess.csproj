@@ -71,5 +71,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookRental.DataModels\BookRental.DataModels.csproj">
+      <Project>{354284C4-99F1-46EA-8584-3E27D4DD67DF}</Project>
+      <Name>BookRental.DataModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
