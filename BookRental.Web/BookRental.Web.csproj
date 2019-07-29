@@ -131,6 +131,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\blank.gif" />
+    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\fancybox_overlay.png" />
+    <Content Include="Content\css\fancybox_sprite.png" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\jquery.fancybox.css" />
+    <Content Include="Content\css\loading-bar.css" />
+    <Content Include="Content\css\morris.css" />
+    <Content Include="Content\css\site.css" />
+    <Content Include="Content\css\toastr.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\background.jpg" />
+    <Content Include="Content\images\books\antman.jpg" />
+    <Content Include="Content\images\books\background.jpg" />
+    <Content Include="Content\images\books\batmanvssuperman.jpg" />
+    <Content Include="Content\images\books\betafish.jpg" />
+    <Content Include="Content\images\books\edgeoftomorrow.jpg" />
+    <Content Include="Content\images\books\fantasticfour.jpg" />
+    <Content Include="Content\images\books\home.jpg" />
+    <Content Include="Content\images\books\insideout.jpg" />
+    <Content Include="Content\images\books\jurassicworld.jpg" />
+    <Content Include="Content\images\books\madmax.jpg" />
+    <Content Include="Content\images\books\minions.jpg" />
+    <Content Include="Content\images\books\southpaw.jpg" />
+    <Content Include="Content\images\books\spectre.jpg" />
+    <Content Include="Content\images\books\ted2.jpg" />
+    <Content Include="Content\images\books\thelongestride.jpg" />
+    <Content Include="Content\images\books\thewalkingdead.jpg" />
+    <Content Include="Content\images\books\trainwreck.jpg" />
+    <Content Include="Content\images\books\truedetective.jpg" />
+    <Content Include="Content\images\books\unknown.jpg" />
+    <Content Include="Content\images\books\Wallpaper 8.png" />
+    <Content Include="Content\images\raty\star-half-big.png" />
+    <Content Include="Content\images\raty\star-half.png" />
+    <Content Include="Content\images\raty\star-off-big.png" />
+    <Content Include="Content\images\raty\star-off.png" />
+    <Content Include="Content\images\raty\star-on-big.png" />
+    <Content Include="Content\images\raty\star-on.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -149,6 +189,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
