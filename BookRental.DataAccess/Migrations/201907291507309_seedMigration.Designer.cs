@@ -7,13 +7,13 @@ namespace BookRental.DataAccess.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class MigrationInit : IMigrationMetadata
+    public sealed partial class seedMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MigrationInit));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(seedMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201907291359566_MigrationInit"; }
+            get { return "201907291507309_seedMigration"; }
         }
         
         string IMigrationMetadata.Source
