@@ -265,6 +265,8 @@
     <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtensions.cs" />
     <Compile Include="Infrastructure\MessageHandlers\BookRentalAuthHandler.cs" />
+    <Compile Include="Models\BookViewModel.cs" />
+    <Compile Include="Models\GenreViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -292,7 +294,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BookRental.DataAccess\BookRental.DataAccess.csproj">
