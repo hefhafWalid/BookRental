@@ -1,6 +1,7 @@
 ﻿using BookRental.DataAccess.Infrastructure;
 using BookRental.DataModels;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -73,6 +74,12 @@ namespace BookRental.DataAccess.Repositories
         {
             DbEntityEntry dbEntityEntry = DbContext.Entry<T>(entity);
             dbEntityEntry.State = EntityState.Deleted;
+        }
+
+        public IEnumerable<T> GetAvailableItems(int id)
+        {
+            //Should be implemented
+            return (IEnumerable<T>)typeof(T);
         }
     }
 }
