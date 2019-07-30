@@ -1,16 +1,12 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html ng-app="bookRental">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Rental System</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @System.Web.Optimization.Styles.Render("~/Content/css")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
 </head>
 <body ng-controller="rootCtrl">
     <top-bar></top-bar>
@@ -25,8 +21,8 @@
             </div>
         </div>
     </div><!--/row-offcanvas -->
-    @Scripts.Render("~/bundles/vendors")
-    @Scripts.Render("~/bundles/spa")
+    @System.Web.Optimization.Scripts.Render("~/bundles/vendors")
+    @System.Web.Optimization.Scripts.Render("~/bundles/spa")
 
 </body>
 </html>
