@@ -264,7 +264,10 @@
     </Compile>
     <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtensions.cs" />
+    <Compile Include="Infrastructure\Mappings\AutoMapperConfiguration.cs" />
+    <Compile Include="Infrastructure\Mappings\DomainToViewModelMappingProfile.cs" />
     <Compile Include="Infrastructure\MessageHandlers\BookRentalAuthHandler.cs" />
+    <Compile Include="Infrastructure\Validators\BookViewModelValidator.cs" />
     <Compile Include="Models\BookViewModel.cs" />
     <Compile Include="Models\GenreViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

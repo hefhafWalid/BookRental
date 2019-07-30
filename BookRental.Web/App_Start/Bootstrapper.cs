@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using BookRental.Web.Infrastructure.Mappings;
+using System.Web.Http;
 
 namespace BookRental.Web.App_Start
 {
@@ -9,7 +10,7 @@ namespace BookRental.Web.App_Start
             // Configure Autofac
             AutofacWebapiConfig.Initialize(GlobalConfiguration.Configuration);
             //Configure AutoMapper
-            //AutoMapperConfiguration.Configure();
+            AutoMapperConfiguration.ConfigureServices();
         }
     }
 }
