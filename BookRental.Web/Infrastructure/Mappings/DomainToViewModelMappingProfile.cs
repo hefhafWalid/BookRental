@@ -23,6 +23,12 @@ namespace BookRental.Web.Infrastructure.Mappings
 
             CreateMap<Genre, GenreViewModel>()
                 .ForMember(vm => vm.NumberOfBooks, map => map.MapFrom(g => g.Books.Count()));
+
+            CreateMap<Customer, CustomerViewModel>();
+
+            CreateMap<Stock, StockViewModel>();
+
+            CreateMap<Rental, RentalViewModel>();
         }
     }
 }
