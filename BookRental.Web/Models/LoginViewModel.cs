@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BookRental.Web.Infrastructure.Validators;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
