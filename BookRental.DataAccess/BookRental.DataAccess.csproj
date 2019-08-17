@@ -78,9 +78,9 @@
     <Compile Include="Infrastructure\IDbFactory.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201908171751223_initImp.cs" />
-    <Compile Include="Migrations\201908171751223_initImp.Designer.cs">
-      <DependentUpon>201908171751223_initImp.cs</DependentUpon>
+    <Compile Include="Migrations\201908171830584_firstSeedrn.cs" />
+    <Compile Include="Migrations\201908171830584_firstSeedrn.Designer.cs">
+      <DependentUpon>201908171830584_firstSeedrn.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EntityBaseRepository.cs" />
@@ -104,8 +104,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908171751223_initImp.resx">
-      <DependentUpon>201908171751223_initImp.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908171830584_firstSeedrn.resx">
+      <DependentUpon>201908171830584_firstSeedrn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
