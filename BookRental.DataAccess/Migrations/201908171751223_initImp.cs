@@ -1,9 +1,9 @@
-namespace BookRental.DataAccess.Migrations
+namespace BookRental.DataAccess.Configurations.Migration
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class firstSeederMig : DbMigration
+    public partial class initImp : DbMigration
     {
         public override void Up()
         {

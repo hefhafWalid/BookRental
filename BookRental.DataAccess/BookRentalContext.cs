@@ -1,4 +1,5 @@
 ﻿using BookRental.DataAccess.Configurations;
+using BookRental.DataAccess.Configurations.Migration;
 using BookRental.DataModels;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -10,7 +11,7 @@ namespace BookRental.DataAccess
         public BookRentalContext()
             : base("BookRental")
         {
-            Database.SetInitializer<BookRentalContext>(null);
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<BookRentalContext, BookRentalContextMigrationConfiguration>());
         }
 
         #region Entity Sets
@@ -31,6 +32,8 @@ namespace BookRental.DataAccess
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //modelBuilder.HasDefaultSchema("dbo");
+            
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Configurations.Add(new UserConfiguration());
@@ -41,6 +44,8 @@ namespace BookRental.DataAccess
             modelBuilder.Configurations.Add(new GenreConfiguration());
             modelBuilder.Configurations.Add(new StockConfiguration());
             modelBuilder.Configurations.Add(new RentalConfiguration());
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

@@ -1,20 +1,19 @@
-namespace BookRental.DataAccess.Migrations
-{
-    using BookRental.DataModels;
-    using System;
-    using System.Collections.Generic;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+﻿using BookRental.DataModels;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<BookRental.DataAccess.BookRentalContext>
+namespace BookRental.DataAccess.Infrastructure
+{
+    public class BookRentalDataSeeder
     {
-        public Configuration()
+        BookRentalContext context;
+        public BookRentalDataSeeder(BookRentalContext brContext)
         {
-            AutomaticMigrationsEnabled = false;
+            context = brContext;
         }
 
-        protected override void Seed(BookRentalContext context)
+        public void Seed()
         {
             //  create genres
             context.GenreSet.AddOrUpdate(g => g.Name, GenerateGenres());
@@ -333,4 +332,3 @@ namespace BookRental.DataAccess.Migrations
         }*/
     }
 }
-
