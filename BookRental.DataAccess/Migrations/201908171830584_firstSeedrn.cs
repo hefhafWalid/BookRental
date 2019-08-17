@@ -3,7 +3,7 @@ namespace BookRental.DataAccess.Configurations.Migration
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initImp : DbMigration
+    public partial class firstSeedrn : DbMigration
     {
         public override void Up()
         {
