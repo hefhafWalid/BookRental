@@ -43,7 +43,7 @@ namespace BookRental.DataAccess.Infrastructure
                 }
             });
 
-            // // create user-admin for chsakell
+            // // create user-admin
             context.UserRoleSet.AddOrUpdate(new UserRole[] {
                 new UserRole() {
                     RoleId = 1, // admin
