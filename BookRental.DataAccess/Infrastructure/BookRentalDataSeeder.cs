@@ -30,18 +30,7 @@ namespace BookRental.DataAccess.Infrastructure
             // create roles
             context.RoleSet.AddOrUpdate(r => r.Name, GenerateRoles());
 
-            // username: hWalid, password: homecinema
-            context.UserSet.AddOrUpdate(u => u.Email, new User[]{
-                new User()
-                {
-                    Email="walidhefhaf@gmail.com",
-                    Username="hWalid",
-                    HashedPassword ="XwAQoiq84p1RUzhAyPfaMDKVgSwnn80NCtsE8dNv3XI=",
-                    Salt = "mNKLRbEFCH8y1xIyTXP4qA==",
-                    IsLocked = false,
-                    DateCreated = DateTime.Now
-                }
-            });
+           
 
             // // create user-admin
             context.UserRoleSet.AddOrUpdate(new UserRole[] {
